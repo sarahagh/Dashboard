@@ -5,7 +5,7 @@ import { SLayout } from "./layout.style";
 function Layout({ children }) {
   return (
     <SLayout>
-      <div className="side-bar">222222222222222222222</div>
+      <div className="side-bar"></div>
 
       <div className="main-content-wrapper">
         <div className="main-content">
@@ -13,9 +13,7 @@ function Layout({ children }) {
 
           <div>{children}</div>
 
-          <footer>
-            this is footer
-          </footer>
+          <footer></footer>
         </div>
       </div>
     </SLayout>

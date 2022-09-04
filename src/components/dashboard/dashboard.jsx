@@ -1,19 +1,26 @@
 import React from "react";
 import InfoCard from "./components/infoCard/infoCard";
+import ChartSection from "./components/chartSection/chartSection";
+import Projects from "./components/projects/projects";
+import { Grid } from "@mui/material";
+import OrdersOverview from "./components/ordersOverview/ordersOverview";
 
 export default function Dashboard() {
   return (
     <div>
       <InfoCard />
+      <ChartSection />
 
-
-
-      
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br />
+      <div>
+        <Grid container spacing={8}>
+          <Grid item xs={8}>
+            <Projects />
+          </Grid>
+          <Grid item xs={4}>
+            <OrdersOverview />
+          </Grid>
+        </Grid>
+      </div>
     </div>
   );
 }
